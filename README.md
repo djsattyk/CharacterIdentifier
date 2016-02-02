@@ -10,3 +10,5 @@ Tells you in words what the character is, e.g. Latin small letter e with acute.
 Then you know what the character is, what it is for and how to use it in your HTML (Links to an external site.) (Hypertext MarkupLanguage) and Java programs.
 
 You can utilize the project Entities (Links to an external site.) to help you with processing the input. The Entities package contains a table called entityfacts.csv which gives you most of the printable characters, their codes, entities and descriptions. You can get the remainder from the Unicode consortium (Links to an external site.). Your Applet would contain a serialized, gzipped, pruned version of that merged table as a resource. You can generate the hex and decimal entities on the fly. They do not have to be embedded in the resource. 
+
+you are the worst
