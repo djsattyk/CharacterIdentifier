@@ -11,4 +11,9 @@ Then you know what the character is, what it is for and how to use it in your HT
 
 You can utilize the project Entities (Links to an external site.) to help you with processing the input. The Entities package contains a table called entityfacts.csv which gives you most of the printable characters, their codes, entities and descriptions. You can get the remainder from the Unicode consortium (Links to an external site.). Your Applet would contain a serialized, gzipped, pruned version of that merged table as a resource. You can generate the hex and decimal entities on the fly. They do not have to be embedded in the resource. 
 
-you are the worst
+1. As a user, I need to know the hex and decimal Unicode numbers.
+2. As a user, I need to have clear instructions on how to program my icon in java.
+3. As a user, I need to be able to have instructions on how to use it in my HTML and Java Programs
+4. As a user, I need a readable and usable interface to easily naviagate my icon converting process.
+5. As a user, I need to see what icon we be messin wit
+6. As a user, I need to see what the characer will look like in hex when coded in UTF-8
