@@ -1,0 +1,19 @@
+import java.awt.Font;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+
+
+public class characterEnlarger {
+	public characterEnlarger(){
+		JTextField textfield = new JTextField("Typer Character Here");
+		 textfield.setFont(textfield.getFont().deriveFont(Font.BOLD, 24));
+		 JOptionPane.showMessageDialog(null, textfield);
+		 char ch = 'o';
+		String hex = String.format("%04x", (int) ch);
+		System.out.println(hex);
+		 //String hex = String.format("%04x", textfield.getText());
+		 //System.out.print("Conrad is an esse" + hex);
+	}
+
+	
+}
