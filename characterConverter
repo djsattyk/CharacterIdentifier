@@ -12,7 +12,7 @@ public class characterEnlarger {
 		 char ch = userinput.charAt(0);
 	
 		String hex = String.format("%04x", (int) ch);
-		System.out.println(hex);
+		JOptionPane.showMessageDialog(null, "Your character in hexadecimal is: " + hex);
 		 //String hex = String.format("%04x", textfield.getText());
 		 //System.out.print("Conrad is an esse" + hex);
 	}
