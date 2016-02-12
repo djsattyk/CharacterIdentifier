@@ -16,8 +16,8 @@ public class characterEnlarger {
 		 //String hex = String.format("%04x", textfield.getText());
 		 //System.out.print("Conrad is an esse" + hex);
 		 
-		 JOptionPane.showMessageDialog(null, "To program "+ ch + " in java, you must type \"int hex =" + hex + " System.out.println((char) hex););\"");         
-
+		JOptionPane.showMessageDialog(null, "To program "+ ch + " in java, you must type \"int hex =" + hex + " System.out.println((char) hex););\"");         
+		JOptionPane.showMessageDialog(null, "To program "+ ch + " in HTML, you must type \" &#" + hex + ";\"");
 	}
 
 	
