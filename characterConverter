@@ -15,6 +15,9 @@ public class characterEnlarger {
 		JOptionPane.showMessageDialog(null, "Your character in hexadecimal is: " + hex);
 		 //String hex = String.format("%04x", textfield.getText());
 		 //System.out.print("Conrad is an esse" + hex);
+		 
+		 JOptionPane.showMessageDialog(null, "To program "+ ch + " in java, you must type \"int hex =" + hex + " System.out.println((char) hex););\"");         
+
 	}
 
 	
