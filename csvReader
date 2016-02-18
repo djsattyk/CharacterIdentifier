@@ -1,51 +1,25 @@
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.awt.Font;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
 
 
-public class csvReader {
-	 public static void main(String[] args) {
+public class characterEnlarger {
+	public characterEnlarger(){
+		JTextField textfield = new JTextField(""); //creates textfield
+		 textfield.setFont(textfield.getFont().deriveFont(Font.BOLD, 24)); //sets to a large and clear font
+		 JOptionPane.showMessageDialog(null, textfield);
+		 String userinput = textfield.getText(); //sets user input to a string
+		 char ch = userinput.charAt(0); //converts string into a character
+	
+		String hex = String.format("%04x", (int) ch); //formats the user input into hexadecimal notation
+		String decimal = hex;
+		char[] charArray = decimal.toCharArray();
+		JOptionPane.showMessageDialog(null, "Your character in hexadecimal is: " + hex); //prints out resulting hexadecimal
+		//JOptionPane.showMessageDialog(null, "To program "+ ch + " in java, you must type \n\"int hex =" + hex+ ";" + " \n System.out.println((char) hex);\"");                
+		JOptionPane.showMessageDialog(null, "To program "+ ch + " in HTML, you must type \" &#" + hex + ";\"");
+		
+	
+	}
 
-			csvReader obj = new csvReader();
-			obj.run();
-
-		  }
-	 
-	 public void run() {
-
-			String csvFile = "/skamarthi16/Downloads/com/mindprod/entities/entityfacts.csv";
-			BufferedReader br = null;
-			String line = "";
-			String cvsSplitBy = ",";
-
-			try {
-
-				br = new BufferedReader(new FileReader(csvFile));
-				while ((line = br.readLine()) != null) {
-
-				        // use comma as separator
-					String[] hex = line.split(cvsSplitBy);
-
-					System.out.println("Country [code= " + hex[4] 
-		                                 + " , name=" + hex[5] + "]");
-
-				}
-
-			} catch (FileNotFoundException e) {
-				e.printStackTrace();
-			} catch (IOException e) {
-				e.printStackTrace();
-			} finally {
-				if (br != null) {
-					try {
-						br.close();
-					} catch (IOException e) {
-						e.printStackTrace();
-					}
-				}
-			}
-
-			System.out.println("Done");
-		  }
+	
 }
