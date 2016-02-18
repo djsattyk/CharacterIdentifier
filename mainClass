@@ -1,0 +1,14 @@
+import java.awt.Color;
+
+import javax.swing.JFrame;
+
+public class mainClass {
+	public static void main(String[] args){
+		
+		
+			//creates and shows frame
+			JFrame d = new CharacterIdentifier();
+		    d.show();
+		    d.setBackground(Color.WHITE);
+	}
+}
